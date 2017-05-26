@@ -1,8 +1,33 @@
 <html>
-  <head>
-  <script src="../lib/blockly_compressed.js"></script>
-  <script src="../blocks_compressed.js"></script>
-  <script src="../en.js"></script>
-  </head>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
 
+    <div class="box top">
+        blockly wao
+    </div>
+    <div class="box left">
+        <div id="blocklyDiv" style="height:100%;width:100%;"></div>
+        <xml id="toolbox" style="display:none">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block>
+            <!-- Add custom blocks here -->
+        </xml>
+    </div>
+        <textarea class="box right" id="code" name="code" size="100" cols="100" rows="10"></textarea>
+    
+
+<!-- blockly imports -->
+    <script src="../blockly/blockly_compressed.js"></script>
+    <script src="../blockly/blocks_compressed.js"></script>
+    <script src="../blockly/en.js"></script>
+    <script src="../blockly/javascript_compressed.js"></script>
+
+    <script src="blockly.js"></script>
 </html>
