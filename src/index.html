@@ -11,13 +11,20 @@
     <div class="box left">
         <div id="blocklyDiv" style="height:100%;width:100%;"></div>
         <xml id="toolbox" style="display:none">
-            <block type="controls_if"></block>
-            <block type="logic_compare"></block>
-            <block type="controls_repeat_ext"></block>
-            <block type="math_number"></block>
-            <block type="math_arithmetic"></block>
-            <block type="text"></block>
-            <block type="text_print"></block>
+            <category name="Basic">
+                <block type="controls_if"></block>
+                <block type="logic_compare"></block>
+                <block type="controls_repeat_ext"></block>
+                <block type="math_number"></block>
+                <block type="math_arithmetic"></block>
+                <block type="text"></block>
+                <block type="text_print"></block>
+            </category>
+            <category name="Playground">
+                <block type="color"></block>
+                <block type="playground_text"></block>
+                <block type="text_align"></block>
+            </category>
             <!-- Add custom blocks here -->
         </xml>
     </div>
@@ -35,7 +42,7 @@
     <script src="../blockly/en.js"></script>
     <script src="../blockly/javascript_compressed.js"></script>
 
+    <script src="blocks.js"></script>
     <script src="blockly.js"></script>
-    <script src="blocks.json"></script>
     <script src="generators.js"></script>
 </html>
