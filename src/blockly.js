@@ -24,4 +24,9 @@ var jsConverter = new Blockly.Generator("Javascript");
 
 /* Returns a string of the entire blockly script. */
 function getBlocklyScript() { return Blockly.JavaScript.workspaceToCode(workspace); }
+function getCode() { return $("#code").val(); }
 function setCode(code) { $("#code").val(code); }
+
+$("#run").click(function(){
+  eval(getCode());
+});
