@@ -20,6 +20,7 @@ workspace.addChangeListener(function(event){
   setCode(getBlocklyScript());
 });
 
+// Converts blocks into JavaScript
 var jsConverter = new Blockly.Generator("Javascript");
 
 /* Returns a string of the entire blockly script. */

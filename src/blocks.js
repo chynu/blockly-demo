@@ -108,5 +108,68 @@ var custom_blocks = {
     "colour": 330,
     "tooltip": "",
     "helpUrl": ""
+  },
+
+  // FONTS
+  font: {
+    "type": "font",
+    "message0": "Change Font %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "font_choices",
+        "options": [
+          [
+            "Times",
+            "Times"
+          ],
+          [
+            "Monospace",
+            "monospace"
+          ],
+          [
+            "Khula",
+            "Khula"
+          ],
+          [
+            "Barrio",
+            "Barrio"
+          ],
+          [
+            "Lora",
+            "Lora"
+          ],
+          [
+            "Montserrat Subrayada",
+            "Montserrat Subrayada"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 330,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+
+  // TEXT SIZE
+  text_size: {
+    "type": "text_size",
+    "message0": "Text size:  %1 px",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "size",
+        "value": 12,
+        "min": 0,
+        "max": 100
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 330,
+    "tooltip": "",
+    "helpUrl": ""
   }
 }

@@ -73,3 +73,31 @@ Blockly.JavaScript['color_is'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
+
+// FONT ==========================================
+Blockly.Blocks['font'] = {
+  init: function(){
+    this.jsonInit(custom_blocks.font);
+  }
+};
+
+Blockly.JavaScript['font'] = function(block) {
+  var dropdown_font_choices = block.getFieldValue('font_choices');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '$("#playground").css("font-family","'+dropdown_font_choices+'");\n';
+  return code;
+};
+
+// TEXT SIZE ==========================================
+Blockly.Blocks['text_size'] = {
+  init: function(){
+    this.jsonInit(custom_blocks.text_size);
+  }
+};
+
+Blockly.JavaScript['text_size'] = function(block) {
+  var number_size = block.getFieldValue('size');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '$("#playground").css("font-size","'+number_size+'");\n';
+  return code;
+};
