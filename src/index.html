@@ -12,7 +12,7 @@
   </div>
   <div class="box left">
     <div id="blocklyDiv" style="height:100%;width:100%;"></div>
-    <xml id="toolbox" style="display:none">
+    <!-- <xml id="toolbox" style="display:none">
       <category name="Basic">
         <block type="controls_if"></block>
         <block type="logic_compare"></block>
@@ -31,8 +31,10 @@
         <block type="font"></block>
         <block type="text_size"></block>
       </category>
-      <!-- Add custom blocks here -->
-    </xml>
+    </xml> -->
+    <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+  <block type="color"></block>
+</xml>
   </div>
   <div class="box right">
     <div id="playground">
@@ -44,7 +46,7 @@
     </div>
     <textarea id="code" name="code" size="100" cols="100" rows="100"></textarea>
   </div>
-  
+
   <!-- blockly imports -->
   <script src="../blockly/blockly_compressed.js"></script>
   <script src="../blockly/blocks_compressed.js"></script>

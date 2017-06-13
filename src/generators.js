@@ -24,7 +24,7 @@ Blockly.Blocks['playground_text'] = {
 
 Blockly.JavaScript['playground_text'] = function(block) {
   var text_input_text = block.getFieldValue('input_text');
-  
+
   var code = '$("#txt").html("<p>'+text_input_text+'</p>");\n';
   return code;
 };
@@ -65,9 +65,9 @@ Blockly.Blocks['color_is'] = {
 
 Blockly.JavaScript['color_is'] = function(block) {
   var colour_color = block.getFieldValue('COLOR');
-  var input_color = "'rgb(" + 
+  var input_color = "'rgb(" +
     parseInt(colour_color.substring(1,3),16)+", "+
-    parseInt(colour_color.substring(3,5),16)+", "+ 
+    parseInt(colour_color.substring(3,5),16)+", "+
     parseInt(colour_color.substring(5),16)+")'";
   var code = "$('#playground').css('background-color') === " + input_color;
   // TODO: Change ORDER_NONE to the correct strength.
